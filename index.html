@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Andrew's Homemade Soap</title>
+
+    <!--Bootstrap Styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Our Styles-->
+</head>
+<body>
+<div class="container w-50">
+
+  <h1>Order Homemade Soaps</h1>
+  <form>
+<!--Soap Selection-->
+  <input type="checkbox" name="soap" id="soap-lavender" value="Lavender" data-price="5.99">
+  <label for="soap-lavender">Lavender $5.99</label>
+
+  <br>
+
+  <input type="checkbox" name="soap" id="soap-citrus" value="Citrus" data-price="4.99">
+  <label for="soap-citrus">Citrus $4.99</label>
+
+  <br>
+
+  <input type="checkbox" name="soap" id="soap-spring-rain" value="Spring Rain" data-price="3.49">
+  <label for="soap-spring-rain">Spring Rain $3.49</label>
+  <br>
+
+<!--Shipping Selection-->
+  <input type="radio" name="shipping" id="shipping-fc" value="First Class" data-shipping="12.99" checked="checked">
+      <label for="shipping-fc">First Class $12.99</label>
+
+   <br>
+
+  <input type="radio" name="shipping" id="shipping-2d" value="Second Day" data-shipping="25.99">
+      <label for="shipping-2d">Second Day $25.99</label>
+
+   <br>
+
+  <input type="radio" name="shipping" id="shipping-on" value="Overnight" data-shipping="45">
+      <label for="shipping-on">Overnight $45.00</label>
+
+   <br>
+
+<!--Order Button-->
+     <button>Order <span id="quantity"></span> Soaps Now!</button>
+  </form>
+
+<!--Totals-->
+    <table>
+        <tr>
+            <td>Soaps Ordered</td>
+            <td id="summary"></td>
+        </tr>
+        <tr>
+            <td>Product Total</td>
+            <td id="subtotal"></td>
+        </tr>
+        <tr>
+            <td>Shipping</td>
+            <td id="shippingCost"></td>
+        </tr>
+        <tr>
+            <td>Grand Total</td>
+            <td id="grandTotal"></td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!--Popper and Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--Our script-->
+<script src="script.js"></script>
+</body>
+</html>
